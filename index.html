@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westpac Visitor Registration System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="nav">
+        <div class="nav-logo">
+            <img src="https://banking.westpac.com.au/wbc/banking/Themes/Default/Desktop/WBC/Core/Images/logo_white_bg.png.ce5c4c19ec61b56796f0e218fc8329c558421fd8.png" class="nav-logo-img"/>
+        </div>
+        <div class="nav-menu">
+            <h1 class="nav-title">
+                Visitor Registration System
+            </h1>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main-content">
+            <div class="issuer-details">
+                <h2 class="issuer-details-heading">Issuer Details</h2>
+                <input class="issuer-id" id="issuer-id" type="text" placeholder="Issuer ID" onchange="idSearch(this)"/>
+                <div class="issuer-name">
+                    <input class="issuer-name-first" id="issuer-name-first" type="text" placeholder="First Name" onchange="firstnameSearch()"/>
+                    <input class="issuer-name-last" id="issuer-name-last" type="text" placeholder="Last Name" onchange="lastnameSearch()"/>
+                </div>
+                <div id="issuer-details-result" class="issuer-details-result">
+                </div>
+        </div>
+        <div class="visitor">
+            <div class="visitor-details">
+                <h2 class="visitor-details-heading">Visitor Details</h2>
+                <div class="visitor-data-inputs">
+                <div class="visitor-data">
+                <div class="visitor-name">
+                <input class="visitor-firstname" id="visitor-firstname" type="text" placeholder="First Name"/>
+                <input class="visitor-lastname" id="visitor-lastname" type="text" placeholder="Last Name"/>
+                </div>
+                <input class="visitor-purpose" id="visitor-purpose" type="text" placeholder="Visit Purpose"/>
+
+            </div>
+                <div class="visitor-duration">
+                    <p>From</p>
+                    <input class="visitor-start" id="visitor-start" type="date"/>
+                    <p>To</p>
+                    <input class="visitor-end" id="visitor-end" type="date"/>
+                </div>
+            </div>
+            </div>
+            <div class="visitor-card">
+                <button class="issue-pass" id="issue-pass" disabled>Issue Pass</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
